@@ -22,10 +22,22 @@
       align-items: center;
       background: #FFD700;
       padding: 10px;
+      gap: 10px;
     }
+
+    /* Recuadros */
+    .logo, .nombre, .icons {
+      border: 2px solid #000;   /* línea negra */
+      border-radius: 8px;       /* esquinas redondeadas */
+      padding: 5px;             /* espacio interno */
+      background: #fff8d1;      /* fondo suave para destacar */
+    }
+
     .logo img {
-      width: 110px;
+      width: 110px; 
       height: auto;
+      display: block;
+      margin: auto;
     }
     .nombre {
       text-align: center;
@@ -101,7 +113,7 @@
       gap: 20px;
     }
     .box img {
-      width: 100%;
+      width: 100%; 
       border-radius: 8px;
     }
 
@@ -130,11 +142,9 @@
 </head>
 <body>
   <div class="container">
-    <!-- HEADER -->
     <header>
       <div class="logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Colombia_national_football_team_logo.png"
-             alt="Logo Selección Colombia">
+        <img src="data:image/jpeg;base64,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" alt="Logo Selección Colombia FCF">
       </div>
       <div class="nombre">Selección Colombia</div>
       <div class="icons">
@@ -145,7 +155,6 @@
     </header>
 
     <div class="main">
-      <!-- Menú lateral -->
       <nav class="menu">
         <a href="https://fcf.com.co/" target="_blank">Noticias</a>
         <a href="https://fcf.com.co/calendario/" target="_blank">Calendario</a>
@@ -153,11 +162,10 @@
         <a href="https://fcf.com.co/contacto/" target="_blank">Contacto</a>
       </nav>
 
-      <!-- Centro con videos y textos -->
       <div class="content">
         <div class="videos">
-          <iframe src="https://www.youtube.com/embed/ONRp7xzWX_A" title="Conferencia Selección Colombia"></iframe>
-          <iframe src="https://www.youtube.com/embed/dSnrzLKiiL4" title="Goles Selección Colombia"></iframe>
+          <iframe src="https://www.youtube.com/embed/ONRp7xzWX_A" title="Conferencia Selección Colombia" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/dSnrzLKiiL4" title="Goles Selección Colombia" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="textos">
           <div class="texto">Últimas noticias sobre la Selección Colombia: resultados, análisis y entrevistas.</div>
@@ -165,20 +173,18 @@
         </div>
       </div>
 
-      <!-- Columna derecha con imágenes -->
       <aside>
         <div class="box">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Selección_Colombia_Copa_América.jpg"
-               alt="Selección Colombia en acción">
+          <img src="https://fcf.com.co/wp-content/uploads/2023/06/03.07.james_.jpg"
+               alt="James Rodríguez celebrando">
         </div>
         <div class="box">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Colombia_national_football_team_at_2018_World_Cup.jpg"
-               alt="Equipo Colombia">
+          <img src="https://www.futbolred.com/files/article_main/uploads/2025/01/30/679c29a7009cb.jpeg"
+               alt="Selección Colombia Sub-20 celebrando">
         </div>
       </aside>
     </div>
 
-    <!-- FOOTER -->
     <footer>
       <div class="col">
         <span class="dot"></span> Federación Colombiana de Fútbol
